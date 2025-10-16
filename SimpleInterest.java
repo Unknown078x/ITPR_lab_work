@@ -1,7 +1,8 @@
 package anudip;
 
-
+//defining the class
 class SI{
+        //member variable
         private float principal,rate;
         private int time;
         SI(float p, float r, int t){
@@ -30,3 +31,4 @@ public class SimpleInterest {
         a.CalculateSI();
     }
 }
+
