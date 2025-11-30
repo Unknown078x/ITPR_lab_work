@@ -15,17 +15,20 @@ private FacultyService facultyService;
 		//to initailize service
 		facultyService = new FacultyServiceImpl();
 	}
-	//user interface for registration of new course
+	//user interface for registration of new faculty
 	public void registerFacultyUI()
 	{
 		Scanner sc = new Scanner(System.in);
-		//input of course id
+		//input of faculty id
 		System.out.print("Enter Faculty id : ");
 		String facultyId = sc.nextLine();
+		//input of faculty name
 		System.out.print("Enter Faculty Name : ");
 		String name = sc.nextLine();
+		//input of faculty qualification
 		System.out.print("Enter Qualification : ");
 		String qualification = sc.nextLine();
+		//input of faculty status
 		System.out.print("Enter Status : ");
 		String status = sc.nextLine();
 	
