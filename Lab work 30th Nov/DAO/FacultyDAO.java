@@ -15,7 +15,7 @@ public interface FacultyDAO {
 	//method to delete the faculty
 	int delete(String facultyId);
 	
-	/*--- to fetch course details based on course id ----*/
+	/*--- to fetch faculty details based on faculty id ----*/
 	Course findByFacultyId(String facultyId);
 	
 	/*---- to update Faculty Status by Faculty Id ---*/
