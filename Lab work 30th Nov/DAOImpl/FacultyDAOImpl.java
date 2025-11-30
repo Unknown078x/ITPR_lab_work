@@ -47,18 +47,18 @@ public class FacultyDAOImpl implements FacultyDAO{
 							+"status from faculty";
 					//to execute the select query
 					ResultSet result = stmt.executeQuery(sqlQuery);
-					//Creating object of Course
+					//Creating object of faculty
 					Faculty faculty;
 					//fetching data
 					while(result.next())
 					{
 						faculty = new Faculty();
-						//setting course data
+						//setting faculty data
 						faculty.setFacultyId(result.getString(1));
 						faculty.setFacultyName(result.getString(2));
 						faculty.setQualification(result.getString(3));
 						faculty.setStatus(result.getString(4));
-						//inserting course into arraylist
+						//inserting faculty into arraylist
 						facultyList.add(faculty);
 					}				
 				}
